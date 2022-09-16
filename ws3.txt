@@ -1,0 +1,84 @@
+Script started on 2022-09-16 00:05:58-04:00
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ pwd
+/home/rishabh/WS3
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ ls -l
+total 3162796
+-rw-rw-r-- 1 rishabh rishabh 3238702530 Sep 15 23:50 amazon_reviews_us_Books_v1_02.tsv
+-rw-rw-r-- 1 rishabh rishabh          0 Sep 16 00:05 ws3.txt
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ history -c
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ history
+    1  history
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+===========================================================================
+Q1) Which customers are the top 3 reviewers (with the most reviews)?
+A) Customer IDs: 
+50122160 has 21922 reviews, 
+50732546 has 9964 reviews,
+52615377 has 2664 reviews
+===========================================================================
+
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  21922 50122160
+   9964 50732546
+   2664 52615377
+   2215 45041039
+   1797 50776149
+   1786 50913245
+   1643 20595117
+   1622 45273033
+   1416 39569598
+   1384 49693975
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+===========================================================================
+Q2) What are the top 3 most reviewed products?
+A) Product IDs: 
+043935806X has 4625 reviews, 
+0439139597 has 3739 reviews,
+0525947647 has 2666 reviews
+===========================================================================
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ cut -f 4  amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+   4625 043935806X
+   3739 0439139597
+   2666 0525947647
+   2615 0895260174
+   2584 0385504209
+   2366 0590353403
+   2052 0439784549
+   2024 0316666343
+   1795 1400050308
+   1772 0312864590
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ history
+    1  history
+    2  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+    3  cut -f 4  amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+    4  history
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ history > cmds.log
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ 
+]0;rishabh@sjsu:~/WS3[rishabh@sjsu WS3]$ exit
+
+Script done on 2022-09-16 00:09:29-04:00

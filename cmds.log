@@ -1,0 +1,5 @@
+    1  history
+    2  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+    3  cut -f 4  amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+    4  history
+    5  history > cmds.log
